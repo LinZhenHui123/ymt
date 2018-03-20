@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+
+	</head>
+
+	<body>
+		<!--header-->
+		<div class="title">
+			<div class="type">
+				<span>
+						Hi，欢迎来到杂七杂八！
+					</span>
+				<ul>
+					<li class="on">
+						<a href="login.html">登录</a>
+					</li>
+					<li class="on">
+						<a href="register.html">注册</a>
+					</li>
+					<li class="off off1" style="display: none;">
+
+						</li>
+						<li class="off off2" style="display: none;">
+							退出
+						</li>
+					<li>
+						<a href="#">购物车</a>
+					</li>
+					<li>
+						<a href="#">个人中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--header end-->
+		<div class="sw-bd">
+			<div class="table-title">
+				<span class="check-all hookCheckAll"><label><i class="blackfive-icon bi-checkbox hookCheckAllCheckbox"></i>全选</label></span>
+				<span class="product-info">商品信息</span>
+				<span class="price">单价(元)</span>
+				<span class="count">数量</span>
+				<span class="sum">金额(元)</span>
+				<span class="operate">操作</span>
+			</div>
+			<div class="product-list-wrap" id="prodListContainer" data-promotion="1">
+				<ul class="product-bd hookProdList">
+					<li class="item" data-cartitemid="5aa8e4f3be141a11587d1a97" data-catalogid="b2b1d505-74a3-4497-9c33-406a7a4da002">
+						<span class="check"><i class="blackfive-icon bi-checkbox hookCheckbox"></i></span>
+						<div class="check-product-info">
+							<dl class="product-info">
+								<dt class="pi-img"><a href="//www.ymatou.com/Product/e4c843ff-f71f-4c47-be79-07c2600882ce.html" target="_blank"><img id="catimg" src="http://pic1.ymatou.com/G02/shangou/M0A/68/11/CgvUA1omo02AD8fmAAS4l2KKEbw130_1_1_n_w_lb.jpg" width="80" height="80"></a>
+                                                    
+                                                    
+                                            </dt>
+								<dd class="pi-info">
+									<p class="pi-name">美国直邮FILA斐乐的轻便透气女鞋！休闲鞋记忆棉鞋垫很厚很软很弹</p>
+									<div class="pi-attribute hookAttr" ismulti="false">尺码分类:11<br>颜色分类:绿色
+
+										<div class="modify-wrap" style="display: none;">
+											<span class="modify"><i class="blackfive-icon bi-modify"></i>修改</span>
+										</div>
+									</div>
+								</dd>
+								<p class="product-time hkRestTime" id="prod5aa8e4f3be141a11587d1a97" data-time="-1"></p>
+							</dl>
+							<div class="price">
+								<p class="current-price hookCurPrice">229.00</p>
+							</div>
+
+							<div class="count">
+								<div class="count-check hookPurchaseNum">
+									<span class="reduce disabled" title="减少"><em></em></span><input type="text" readonly="readonly" value="1"><span class="add" title="增加">+</span>
+								</div>
+
+							</div>
+							<div class="sum hookProdTotalPrice">229.00</div>
+							<div class="operate">
+								<p class="delete hookToDelete">删除</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			<div class="account-wrap" style="position: relative;">
+				<div class="aw-l">
+					<span class="check-all hookCheckAll"><label><i class="blackfive-icon bi-checkbox hookCheckAllCheckbox"></i>全选</label></span>
+					<span class="del-checked hookToDeleteSelected">删除选中商品</span>
+				</div>
+				<div class="aw-r">
+					<span class="aw-info">已选 <em class="num hookSelectedProdNum">0</em> 件商品，总价<span id="DiscountAmount"></span>：<em class="unit">¥</em><em class="total hookCartTotalPrice">0.00</em></span>
+					<button class="account-btn disabled" id="toSettleAccountsBtn">结算</button>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer">
+			<div class="matou-server" style="padding:10px 0;height:60px">
+				<a class="matou-server-link" style="color:#fff;" href="http://staticontent.ymatou.com/help/global/index_n.html">
+					<img src="http://static.ymatou.com/images/sprites/footer_hengtiao.png">
+				</a>
+			</div>
+			<div class="area">
+				<div id="bottom_list" class="bottom_list">
+					<ul class="dl">
+						<li class="dt">购物指南</li>
+						<li>
+							<a>注册与登录</a>
+						</li>
+						<li>
+							<a>账户信息维护</a>
+						</li>
+						<li>
+							<a>购物流程</a>
+						</li>
+						<li>
+							<a>会员体系</a>
+						</li>
+						<li>
+							<a>常见问题</a>
+						</li>
+					</ul>
+					<ul class="dl">
+						<li class="dt">订单服务</li>
+						<li>
+							<a>订单状态说明</a>
+						</li>
+						<li>
+							<a>自动取消订单</a>
+						</li>
+						<li>
+							<a>上传身份证</a>
+						</li>
+					</ul>
+					<ul class="dl">
+						<li class="dt">支付与配送</li>
+						<li>
+							<a>支付方式</a>
+						</li>
+						<li>
+							<a>优惠券和红包</a>
+						</li>
+						<li>
+							<a>如何提现</a>
+						</li>
+						<li>
+							<a>配送方式</a>
+						</li>
+					</ul>
+					<ul class="dl">
+						<li class="dt">售后服务</li>
+						<li>
+							<a>消费维权</a>
+						</li>
+						<li>
+							<a>纠纷处理规则</a>
+						</li>
+						<li>
+							<a>退货规则</a>
+						</li>
+					</ul>
+					<div class="dl last">
+						<div class="dt">官方微信</div>
+						<p>
+							<img src="http://static.ymatou.com/content/images/weixin2d-new.png" class="img">
+						</p>
+						<span class="weibobox">
+                    <a >关注微博</a>
+                    <a><span class="ico-weibo-png"></span></a>
+						</span>
+					</div>
+				</div>
+				<div class="matou-intro">
+					<a>关于码头</a>
+					<a>码头招聘</a>
+					<a>网站地图</a>
+					<a>所有帮助</a>
+					<a>海外招商中心</a>
+					<a>扫货买手规则</a>
+					<a>卖家常见问题</a>
+				</div>
+				<ul class="matou-link">
+					<a href="http://www.55bbs.com/" target="_blank">55bbs我爱购物网</a>
+					<a href="http://www.liba.com/" target="_blank">篱笆网</a>
+					<a href="http://www.kimiss.com/" target="_blank">闺蜜网</a>
+					<a href="http://www.mplife.com/" target="_blank">名品导购网</a>
+					<a href="http://www.rayli.com.cn/" target="_blank">瑞丽女性网</a>
+					<a href="http://www.qidian.com/" target="_blank">起点中文网</a>
+					<a href="http://www.qdmm.com/" target="_blank">起点女生网</a>
+					<a href="http://www.ku6.com/" target="_blank">酷6网</a>
+					<a href="http://fanli.tpy100.com/" target="_blank">太平洋返利网</a>
+					<a href="/forum-discount" target="_blank">海外折扣拼团</a>
+					<a href="http://www.handuyishe.com" target="_blank">韩都衣舍</a>
+					<a href="http://www.jianianle.com" target="_blank">嘉年乐</a>
+					<a href="http://www.homevv.com" target="_blank">为为网购商城</a>
+					<a href="http://www.tcsw.cn/" target="_blank">同城购物网</a>
+					<a href="http://www.jia.com/" target="_blank">齐家网</a>
+					<a href="http://www.easy361.com/" target="_blank">网上商城</a>
+					<a href="http://www.lipin-bj.cn/" target="_blank">礼品公司</a>
+					<a href="http://www.rayedu.com.cn/" target="_blank">留学服务中心</a>
+					<a href="https://giftpi.com" target="_blank">礼派</a>
+					<a href="http://www.kyp.com" target="_blank">快易拍</a>
+					<a href="http://www.binlun.com.cn" target="_blank">手表</a>
+					<a href="http://www.kadang.com/" target="_blank">卡当创意礼物</a>
+					<a href="http://www.wsqsgo.com/" target="_blank">户外装备</a>
+					<a href="http://woyaozhan.com/" target="_blank">母婴展</a>
+					<a href="http://www.weicaifu.com/" target="_blank">微财富理财</a>
+					<aclass="bo">更多&gt;&gt;</a>
+				</ul>
+				<div class="friendLinks">
+					<a id="___szfw_logo___" class="linkitem icon-kexin"></a>
+					<a class="linkitem icon-chengxin"></a>
+					<span class="linkitem icon-zhifubao" title="支付宝特约商户"></span>
+					<a class="linkitem icon-wangjing" href="http://www.zx110.org/" target="_blank" rel="nofollow"></a>
+					<a class="linkitem icon-gongshang2" href="http://shwg.dianping.com" target="_blank" rel="nofollow"></a>
+				</div>
+				<div id="copywrite" class="copywrite">
+					© 2009－2018 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021
+					<font color="white">17 </font>
+					<br>
+					<a href="http://www.miitbeian.gov.cn" target="_blank">上海洋码头网络技术有限公司 版权所有 备案号（ 沪ICP备11050082号 ）</a>
+					<br>上海市静安区江场三路93号13层
+				</div>
+				<div class="friendLinks2">
+
+					<a class="linkitem icon-gongshang" target="_blank" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20111031111726664" rel="nofollow"></a>
+
+					<a class="beian-banner" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010802001410"><i class="beian"></i>
+						<p class="beian-txt">沪公网安备 31010802001410号</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+	var osimg=$("#catimg");
+	var msg = getCookie("goodcat");
+	msg = JSON.parse(msg);
+	var aimg = msg[0].src.slice(1, -1).split(",");
+	var aaimg = [];
+	for(let i = 0; i < aimg.length; i++) {
+		aaimg.push(aimg[i].slice(1, -1));
+	}
+
+	$("#catimg").attr("src",msg[0].src);
+	$(".hookCurPrice").html(msg[0].pri);
+	$(".sum").html(msg[0].pri);
+	$(".pi-name").html(msg[0].name);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		function Cookie() {
+			
+			var cook = getCookie("name");
+			console.log(cook);
+			if(cook ) {
+				$(".on").css("display", "none");
+				$(".off").css("display", "block");
+				$(".off1").html(cook );
+			}
+		}
+		new Cookie();
+		
+		$(".off2").on("click",function(){
+			removeCookie("name");
+			window.location.href = 'login.html';
+		})
+		//		设置cookie
+		function setCookie(name, value, t) {
+			var d = new Date();
+			d.setDate(d.getDate() + t);
+			document.cookie = name + "=" + value + ";expires=" + d;
+		}
+		//		获取cookie
+		function getCookie(name) {
+			var str = document.cookie;
+			var arr = str.split("; ");
+			var newArr = [];
+			for(var i = 0; i < arr.length; i++) {
+				newArr.push(arr[i].split("="));
+			}
+			for(var i = 0; i < newArr.length; i++) {
+				if(name == newArr[i][0]) {
+					return newArr[i][1];
+				}
+			}
+		}
+
+		//		删除cookie
+		function removeCookie(name) {
+			setCookie(name, "123", -1);
+		}
+	</script>
+
+</html>

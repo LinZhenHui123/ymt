@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper .area:after,
+.wrapper .area:before {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #888888;
+}
+
+body {
+    background-color: #fff;
+    font: normal 12px/1.5 Microsoft yahei, Arial;
+    color: #666;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    min-width: 1200px;
+    display: block;
+    .area {
+        width: 1190px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        padding: 0 5px;
+        min-width: 1000px;
+    }
+}
+
+.simpletopbar {
+    height: 98px;
+    border-bottom: 2px solid #c33;
+    .left {
+        float: left;
+        .logo {
+            width: 311px;
+            height: 73px;
+            background: url(//s2.ymatou.com/top/a09cf0d320e4ffc6445ae0ec42cb02f0.png);
+            display: block;
+            float: left;
+            margin: 12px 0 13px;
+        }
+    }
+    .right {
+        padding-top: 40px;
+        float: right;
+        line-height: 30px;
+        .item {
+            float: left;
+            width: 80px;
+        }
+        .top-dropdown {
+            position: relative;
+        }
+        .top-dropdown:hover .dropdownlist {
+            display: block;
+        }
+        .dropdownlist {
+            display: none;
+            background-color: #fff;
+            line-height: 18px;
+            position: absolute;
+            top: 22px;
+            overflow: hidden;
+            li {
+                margin-top: 10px;
+            }
+        }
+        .top-dropdown .arrow {
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            overflow: hidden;
+            display: inline-block;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #666 transparent transparent;
+            margin: 6px 3px 0;
+        }
+    }
+}
+
+//body----------------------------------------------------
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    min-width: 1200px;
+    .area {
+        width: 1190px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        min-width: 1000px;
+        padding: 0 5px;
+        .reg_tabs {
+            height: 70px;
+            border-bottom: 2px solid #ddd;
+            position: relative;
+            ul li {
+                float: left;
+                a {
+                    display: block;
+                    float: left;
+                    overflow: hidden;
+                    height: 70px;
+                    line-height: 70px;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 0 40px;
+                    border-bottom: 2px solid #ddd;
+                    i {
+                        font-size: 30px;
+                        font-weight: 400;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .reg_tabs_right {
+                position: absolute;
+                right: 0;
+                top: 39px;
+                a {
+                    color: #3368ff;
+                }
+            }
+            .active a {
+                border-bottom-color: #f04e00;
+                color: #f04e00;
+                background: url(//s2.ymatou.com/login/5b664fb6bc602e04ae085eab8d2a52b9.jpg) no-repeat bottom;
+            }
+        }
+        .form_info {
+            width: 100%;
+            position: relative;
+            display: block;
+            .fr {
+                float: right;
+                .payment {
+                    height: 370px;
+                    width: 192px;
+                    overflow: hidden;
+                    padding: 20px 30px 0;
+                    background: url(//s2.ymatou.com/login/49694f08c5a1502bc7993f9367d5a441.png) no-repeat 0 0;
+                    .bd {
+                        border: 1px solid #e2e2e2;
+                        .dd {
+                            padding: 5px 10px;
+                            height: 24px;
+                            line-height: 24px;
+                            border-bottom: 1px dashed #e2e2e2;
+                            margin-bottom: -1px;
+                            a i {
+                                width: 24px;
+                                margin-right: 5px;
+                            }
+                            .sina_login i {
+                                background-image: url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png);
+                                background-repeat: no-repeat;
+                                background-position: -86px -235px;
+                                height: 21px;
+                                float: left;
+                            }
+                            #buttonAlipayFastPayment i,
+                            #wxLogin i {
+                                display: inline-block;
+                                cursor: pointer;
+                                vertical-align: middle;
+                            }
+                            #buttonAlipayFastPayment i {
+                                height: 16px;
+                                background: url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png) -62px -235px;
+                                background-repeat: no-repeat;
+                            }
+                            #wxLogin i {
+                                height: 20px;
+                                background: url(//s2.ymatou.com/login/bfdb5897258b551e046ea2fbc433c70b.png);
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+            .left {
+                width: 680px;
+            }
+            .fl {
+                float: left;
+                .item {
+                    float: none;
+                    margin: 15px 0;
+                    padding: 5px 0;
+                    line-height: 26px;
+                    clear: both;
+                    .regtitle {
+                        float: left;
+                        text-align: right;
+                        width: 105px;
+                        margin-right: 8px;
+                    }
+                    .regtext {
+                        margin-right: 3px;
+                        width: 200px;
+                        height: 22px;
+                        border: 1px solid #dadada;
+                        line-height: 22px;
+                        box-shadow: inset 2px 2px 4px #f0f0f0;
+                        border-top: 1px solid #bababa;
+                        padding: 2px 5px;
+                    }
+                    .verifi {
+                        display: none;
+                        height: 26px;
+                        background: #eb5e00;
+                        line-height: 26px;
+                        padding: 0 10px;
+                        vertical-align: middle;
+                        color: #fff;
+                    }
+                    #registerbtnPhone {
+                        width: 67px;
+                        height: 30px;
+                        background: url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png) -27px -2px;
+                        display: inline-block;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .form_info,
+        .payment .hd {
+            padding: 10px 0;
+        }
+    }
+}
+
+.yel {
+    color: #f04d00;
+}
+
+.blue {
+    color: #3368ff;
+}
+
+.wrapper:after,
+.wrapper:before {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}

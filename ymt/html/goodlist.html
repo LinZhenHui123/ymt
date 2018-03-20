@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--header-->
+		<div class="header">
+			<div class="title">
+				<div class="type">
+					<span>
+						Hi，欢迎来到杂七杂八！
+					</span>
+					<ul>
+						<li class="on">
+							<a href="login.html">登录</a>
+						</li>
+						<li class="on">
+							<a href="register.html">注册</a>
+						</li>
+						<li class="off off1" style="display: none;">
+
+						</li>
+						<li class="off off2" style="display: none;">
+							退出
+						</li>
+						<li>
+							<a href="#">购物车</a>
+						</li>
+						<li>
+							<a href="#">个人中心</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo type">
+				<span class="text"></span>
+				<form class="search" action="http://www.baidu.com">
+					<input class="input-search" name="k" value="" autocomplete="off" placeholder="搜索您想要的商品">
+					<button class="search-btn" type="submit"></button>
+				</form>
+				<div class="qrapp"></div>
+			</div>
+			<div class="menu-nav type">
+				<a href="http://localhost/index/ymt/index.html" class="menu-item current" id="index-tab" title="首页">首页</a>
+				<a href="" id="todaybuy-bt" class="menu-item" title="今日限时抢">今日限时抢</a>
+				<a href="goodlist.html" id="ymt-bt" class="menu-item" title="洋货集">洋货集</a>
+				<div id="flbtn">
+					<a href="" id="categoryMenu" title="分类" class="menu-item">分类 <i class="c-down"></i></a>
+					<div class="category-box">
+						<div class="category-downlist">
+							<div class="category-wrap">
+								<div class="cw-item">
+									<a href="" title="护肤" target="_blank">
+										<h3 class="cw-title"><span target="_blank">护肤<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>面膜</span>
+											<span>水乳</span>
+											<span>防晒隔离</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M0B/0B/61/CgvUBFlE_l-AFtC7AAMyS71u0oU066_1_1_o.gif" alt="护肤"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a href="" title="彩妆" target="_blank">
+										<h3 class="cw-title"><span target="_blank">彩妆<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>口红</span>
+											<span>气垫</span>
+											<span>香水</span>
+										</div>
+										<span class="cw-img"><img src="http://pc1.img.ymatou.com/G02/M0A/ED/A9/CgvUBVeZ2L6ABltOAABxkvbGDQk168_o.png" alt="彩妆"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a href="" title="品牌箱包" target="_blank">
+										<h3 class="cw-title"><span target="_blank">品牌箱包<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>单肩包</span>
+											<span>双肩包</span>
+											<span>Coach</span>
+											<span>LV</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M09/0D/78/CgvUBVlFEvOAQkcaAAGYJe4aulA194_143_150_o.gif" alt="品牌箱包"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a href="" title="鞋履" target="_blank">
+										<h3 class="cw-title"><span target="_blank">鞋履<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>凉鞋</span>
+											<span>单鞋</span>
+											<span>Adidas</span>
+										</div>
+										<span class="cw-img"><img src="http://pc1.img.ymatou.com/G02/M00/ED/64/CgvUBFeZ2YSACNR4AACJFnNWXac077_o.png" alt="鞋履"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >女士穿搭<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>连衣裙</span>
+											<span>T恤</span>
+											<span>衬衫</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M08/EC/89/CgvUA1lk5NiANQAeAAD_7CZcg78365_461_486_o.gif" ></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span>男士护肤<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>发胶</span>
+											<span>剃须</span>
+											<span>止汗</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M05/6A/09/CgvUBVhSXpOAEDFIAACDzejl1ZE036_1_1_o.png"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span>内衣<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>文胸</span>
+											<span>CK</span>
+											<span>维密</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M01/EC/A0/CgvUA1lk5rWASAHsAAFaTZMu2iw899_461_486_o.gif" ></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >品质男装<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>Polo</span>
+											<span>衬衫</span>
+											<span>豆豆鞋</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M02/F3/3C/CgvUBVlk4iiAEp0IAACiLbg3h8o349_461_486_o.gif" alt="品质男装"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span>运动<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>运动鞋</span>
+											<span>Puma</span>
+											<span>Nike</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M09/F2/32/CgvUBFlk4ziAYl1gAADso_Kix_M090_461_486_o.gif" ></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >钟表配饰<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>项链</span>
+											<span>墨镜</span>
+											<span>潘多拉</span>
+										</div>
+										<span class="cw-img"><img src="http://pc1.img.ymatou.com/G02/M07/F3/85/CgvUBVeavnWAab-JAACOcFScJj8696_o.png" alt="钟表配饰"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >居家<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>滤水壶</span>
+											<span>乳胶枕</span>
+											<span>保温杯</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M05/06/B3/CgvUA1lFFDaARUpcAACzNBqBHFw705_188_181_o.gif" alt="居家"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >食品保健<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+
+											<span>保健</span>
+											<span>葡萄酒</span>
+											<span>减肥排油</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M09/18/C5/CgvUA1lHiFiAYmDvAAFME201JUk327_1_1_o.gif" alt="食品保健"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >母婴<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>纸尿裤</span>
+											<span>奶粉</span>
+											<span>安全座椅</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M01/0C/59/CgvUBFlFFSmAFztnAADDj1QetZA463_1_1_o.gif" alt="母婴"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a>
+										<h3 class="cw-title"><span >数码家电<em class="header-icon"></em></span></h3>
+										<div class="cw-subtitle">
+											<span>洁面仪</span>
+											<span>电吹风</span>
+											<span>Beats</span>
+										</div>
+										<span class="cw-img"><img src="http://pic1.ymatou.com/G02/M09/69/5F/CgvUBFhSZQSALSJnAABGFQdHEwQ540_1_1_o.png" alt="数码家电"></span>
+									</a>
+								</div>
+								<div class="cw-item">
+									<a style="display: block;height: 41px;width: 63px;margin: 8px auto">
+										<img src="../img/more.png" alt="更多">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--header--------------------------end-->
+		<div class="yanghuo-bg" id="ymj_page">
+			<div class="yanghuo-banner">
+			</div>
+		</div>
+		<!--goodlist---------------------->
+		<div class="yanghuo-content">
+			<ul class="yanghuo-global-list"></ul>
+
+		</div>
+		<div class="loading-more">点击加载更多</div>
+		<!--footer-->
+		<div class="footer">
+			<div class="matou-server" style="padding:10px 0;height:60px">
+				<a class="matou-server-link" style="color:#fff;" href="http://staticontent.ymatou.com/help/global/index_n.html">
+					<img src="http://static.ymatou.com/images/sprites/footer_hengtiao.png">
+				</a>
+			</div>
+			<div class="area">
+				<div id="bottom_list" class="bottom_list">
+					<ul class="dl">
+						<li class="dt">购物指南</li>
+						<li>
+							<a>注册与登录</a>
+						</li>
+						<li>
+							<a>账户信息维护</a>
+						</li>
+						<li>
+							<a>购物流程</a>
+						</li>
+						<li>
+							<a>会员体系</a>
+						</li>
+						<li>
+							<a>常见问题</a>
+						</li>
+					</ul>
+					<ul class="dl">
+						<li class="dt">订单服务</li>
+						<li>
+							<a>订单状态说明</a>
+						</li>
+						<li>
+							<a>自动取消订单</a>
+						</li>
+						<li>
+							<a>上传身份证</a>
+						</li>
+					</ul>
+					<ul class="dl">
+						<li class="dt">支付与配送</li>
+						<li>
+							<a>支付方式</a>
+						</li>
+						<li>
+							<a>优惠券和红包</a>
+						</li>
+						<li>
+							<a>如何提现</a>
+						</li>
+						<li>
+							<a>配送方式</a>
+						</li>
+					</ul>
+					<ul class="dl">
+						<li class="dt">售后服务</li>
+						<li>
+							<a>消费维权</a>
+						</li>
+						<li>
+							<a>纠纷处理规则</a>
+						</li>
+						<li>
+							<a>退货规则</a>
+						</li>
+					</ul>
+					<div class="dl last">
+						<div class="dt">官方微信</div>
+						<p>
+							<img src="http://static.ymatou.com/content/images/weixin2d-new.png" class="img">
+						</p>
+						<span class="weibobox">
+                    <a >关注微博</a>
+                    <a><span class="ico-weibo-png"></span></a>
+						</span>
+					</div>
+				</div>
+				<div class="matou-intro">
+					<a>关于码头</a>
+					<a>码头招聘</a>
+					<a>网站地图</a>
+					<a>所有帮助</a>
+					<a>海外招商中心</a>
+					<a>扫货买手规则</a>
+					<a>卖家常见问题</a>
+				</div>
+				<ul class="matou-link">
+					<a href="http://www.55bbs.com/" target="_blank">55bbs我爱购物网</a>
+					<a href="http://www.liba.com/" target="_blank">篱笆网</a>
+					<a href="http://www.kimiss.com/" target="_blank">闺蜜网</a>
+					<a href="http://www.mplife.com/" target="_blank">名品导购网</a>
+					<a href="http://www.rayli.com.cn/" target="_blank">瑞丽女性网</a>
+					<a href="http://www.qidian.com/" target="_blank">起点中文网</a>
+					<a href="http://www.qdmm.com/" target="_blank">起点女生网</a>
+					<a href="http://www.ku6.com/" target="_blank">酷6网</a>
+					<a href="http://fanli.tpy100.com/" target="_blank">太平洋返利网</a>
+					<a href="/forum-discount" target="_blank">海外折扣拼团</a>
+					<a href="http://www.handuyishe.com" target="_blank">韩都衣舍</a>
+					<a href="http://www.jianianle.com" target="_blank">嘉年乐</a>
+					<a href="http://www.homevv.com" target="_blank">为为网购商城</a>
+					<a href="http://www.tcsw.cn/" target="_blank">同城购物网</a>
+					<a href="http://www.jia.com/" target="_blank">齐家网</a>
+					<a href="http://www.easy361.com/" target="_blank">网上商城</a>
+					<a href="http://www.lipin-bj.cn/" target="_blank">礼品公司</a>
+					<a href="http://www.rayedu.com.cn/" target="_blank">留学服务中心</a>
+					<a href="https://giftpi.com" target="_blank">礼派</a>
+					<a href="http://www.kyp.com" target="_blank">快易拍</a>
+					<a href="http://www.binlun.com.cn" target="_blank">手表</a>
+					<a href="http://www.kadang.com/" target="_blank">卡当创意礼物</a>
+					<a href="http://www.wsqsgo.com/" target="_blank">户外装备</a>
+					<a href="http://woyaozhan.com/" target="_blank">母婴展</a>
+					<a href="http://www.weicaifu.com/" target="_blank">微财富理财</a>
+					<aclass="bo">更多&gt;&gt;</a>
+				</ul>
+				<div class="friendLinks">
+					<a id="___szfw_logo___" class="linkitem icon-kexin"></a>
+					<a class="linkitem icon-chengxin"></a>
+					<span class="linkitem icon-zhifubao" title="支付宝特约商户"></span>
+					<a class="linkitem icon-wangjing" href="http://www.zx110.org/" target="_blank" rel="nofollow"></a>
+					<a class="linkitem icon-gongshang2" href="http://shwg.dianping.com" target="_blank" rel="nofollow"></a>
+				</div>
+				<div id="copywrite" class="copywrite">
+					© 2009－2018 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021
+					<font color="white">17 </font>
+					<br>
+					<a href="http://www.miitbeian.gov.cn" target="_blank">上海洋码头网络技术有限公司 版权所有 备案号（ 沪ICP备11050082号 ）</a>
+					<br>上海市静安区江场三路93号13层
+				</div>
+				<div class="friendLinks2">
+
+					<a class="linkitem icon-gongshang" target="_blank" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20111031111726664" rel="nofollow"></a>
+
+					<a class="beian-banner" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010802001410"><i class="beian"></i>
+						<p class="beian-txt">沪公网安备 31010802001410号</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		var str = "";
+		var aem = [];
+
+		function GoodList(b) {
+			var that = this;
+			this.a = 8;
+			str +=
+				`<li class="item">
+					<div class="yanghuo-hd">
+						<a href="">
+							<img alt="" class="lazy" src="http://pic1.ymatou.com/G02/M08/A7/FE/CgvUBVjblCuAbxWLAADcdjlrirM219_15_8_w_o.jpg">
+						</a>
+					</div>
+					<div class="yanghuo-bd">
+						<ul class="yanghuo-list">
+							
+						</ul>
+					</div>
+				</li>`
+			$(".yanghuo-global-list").html(str);
+			$.ajax({
+				url: "http://datainfo.duapp.com/shopdata/getGoods.php",
+				dataType: "jsonp",
+				linenumber: this.a,
+			}).then(function(res) {
+				var aimg=res[0][6].slice(1,-1).split(",");
+//				console.log(aimg[0])
+				
+				var sstr = "";
+				for(let i = 0; i < 8; i++) {
+					sstr +=
+						`<li class="yanghuo-item" data-id="${res[i][0]}" imglist=${res[i][6]} >
+					<a 	href="good.html" title="${res[i].goodsName}" class="product-img">
+					<img class="lazy" alt="${res[i].goodsName}" src="${res[i].goodsListImg}" />
+					</a>
+					<div class="yanghuo-text">
+					<p class="price">¥${res[i].price}</p>
+					<p class="name lineClamp2">
+					<a title="${res[i].goodsName}"	href="good.html"  > ${res[i].goodsName}</a>
+					</p>
+					</div>
+					</li>`
+//					console.log(sstr)
+				}
+				sstr +=
+					`<li class="yanghuo-item yanghuo-more">
+					<a href="" title="更多">
+					</a>
+					</li>`
+				//				console.log(sstr)
+				$(".yanghuo-list").html(sstr);
+				aem = $(".yanghuo-list").find("li");
+			})
+		}
+		new GoodList();
+
+		function loadMore(id) {
+			var i = 1;
+			$(id).on("click", function() {
+				i++;
+				new GoodList(i);
+			})
+		}
+		new loadMore(".loading-more")
+
+
+		
+		var str = [];
+		$(".yanghuo-content").on("click", ".yanghuo-item", function() {
+			console.log(this)
+			console.log(this.getAttribute("imglist"))
+				str.push({
+					"goodID": this.getAttribute("data-id"),
+					"src": this.getAttribute("imglist"),
+					"pri": this.children[1].children[0].innerHTML,
+					"name": this.children[1].children[1].children[0].innerHTML,
+					"num": "1"
+				})
+				setCookie("goods", JSON.stringify(str))
+			
+		})
+		function Cookie() {
+			var cook = getCookie("name");
+			console.log(cook);
+			if(cook ) {
+				$(".on").css("display", "none");
+				$(".off").css("display", "block");
+				$(".off1").html(cook );
+			}
+		}
+		new Cookie();
+		
+		$(".off2").on("click",function(){
+			removeCookie("name");
+			window.location.href = 'login.html';
+		})
+		//		设置cookie
+		function setCookie(name, value, t) {
+			var d = new Date();
+			d.setDate(d.getDate() + t);
+			document.cookie = name + "=" + value + ";expires=" + d;
+		}
+		//		获取cookie
+		function getCookie(name) {
+			var str = document.cookie;
+			var arr = str.split("; ");
+			var newArr = [];
+			for(var i = 0; i < arr.length; i++) {
+				newArr.push(arr[i].split("="));
+			}
+			for(var i = 0; i < newArr.length; i++) {
+				if(name == newArr[i][0]) {
+					return newArr[i][1];
+				}
+			}
+		}
+
+		//		删除cookie
+		function removeCookie(name) {
+			setCookie(name, "123", -1);
+		}
+	</script>
+
+</html>

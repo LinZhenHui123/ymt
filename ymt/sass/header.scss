@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*头部*/
+
+.off {
+    display: inline-block;
+}
+
+
+
+.header {
+    text-align: center;
+}
+
+.type {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.header .title {
+    background: #EEEEEE;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #AAAAAA;
+}
+
+.title span {
+    float: left;
+}
+
+.title ul {
+    margin: 0 auto;
+    float: right;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title ul li {
+    flex: 1;
+}
+
+.title ul li a {
+    color: #AAAAAA;
+}
+
+.logo {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    padding-top: 20px;
+}
+
+.logo span {
+    background: url(../img/logo.png);
+    width: 300px;
+    height: 100px;
+    display: block;
+    text-align: left;
+    float: left;
+    margin-top: 20px;
+}
+
+.search {
+    float: left;
+    width: 435px;
+    height: 40px;
+    margin: 80px 0 0 120px;
+    background-color: #c33;
+    text-align: left;
+    box-shadow: 0 1px 2px #b8b3b3;
+    position: relative;
+}
+
+.input-search {
+    width: 370px;
+    height: 22px;
+    padding: 7px 10px;
+    background-color: #fff;
+    border: 0;
+    margin: 2px;
+    font-size: 18px;
+    color: #18181a;
+}
+
+.search-btn {
+    background: url(../img/search.jpg);
+    background-position: -10px;
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    border: 0;
+    display: inline-block;
+}
+
+.logo img {
+    position: absolute;
+    top: 40px;
+    right: 5px;
+}
+
+.menu-nav {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #c33;
+    height: 46px;
+    bottom: -2px;
+    z-index: 10;
+    .current {
+        color: #c33;
+    }
+    .menu-item {
+        display: inline-block;
+        font-size: 20px;
+        color: #383838;
+        padding: 0 35px;
+        font-weight: 700;
+        height: 45px;
+        line-height: 45px;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+        .c-down {
+            background: url(http://s2.ymatou.com/home/1cb1fe20152e19748e6cc8b52cc8fcbb.png) no-repeat;
+            width: 14px;
+            height: 8px;
+            background-size: 14px 8px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+    .category-box {
+        width: 100%;
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 48px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 2px 8px #9b9b9b;
+        .category-downlist {
+            width: 100%;
+            position: relative;
+            display: block;
+            .category-wrap {
+                overflow: hidden;
+                margin: 10px 5px;
+                .cw-item {
+                    width: 198px;
+                    height: 56px;
+                    float: left;
+                    border: 1px dotted #dedede;
+                    position: relative;
+                    padding: 9px 20px;
+                    text-align: left;
+                    border-left: 0;
+                    border-top: 0;
+                    margin: 0 -1px -1px 0;
+                    .cw-title {
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        .header-icon {
+                            background-position: -5px -5px;
+                            width: 7px;
+                            height: 12px;
+                            margin-left: 5px;
+                        }
+                    }
+                    .cw-subtitle {
+                        width: 138px;
+                    }
+                    .cw-img {
+                        width: 55px;
+                        height: 55px;
+                        position: absolute;
+                        top: 9px;
+                        right: 20px;
+                        img {
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#flbtn {
+    display: inline-block;
+    font-size: 20px;
+    color: #383838;
+    padding: 0 35px;
+    font-weight: 700;
+    height: 45px;
+    line-height: 45px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+#flbtn:hover .category-box {
+    display: block;
+}
+
+.category-box .category-downlist .cw-item {
+    width: 198px;
+    height: 56px;
+    float: left;
+    border: 1px dotted #dedede;
+    position: relative;
+    padding: 9px 20px;
+    text-align: left;
+    border-left: 0;
+    border-top: 0;
+    margin: 0 -1px -1px 0;
+}
+
+.category-box .category-downlist .cw-subtitle {
+    width: 138px;
+    color: #000000;
+    font-size: 12px;
+}
+
+h3 {
+    color: #000000;
+}
+
+.category-box .category-downlist .cw-img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+}
+
+.qrapp {
+    float: right;
+    background: url(//s2.ymatou.com/pitem/e99aa3f029f2ae1173fabf6e9edf6c8a.png);
+    width: 161.7px;
+    height: 150px;
+    background-size: 161.7px 150px;
+}
+
+//footer
+.footer {
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    min-width: 1200px;
+    margin-top: 70px;
+    .matou-server {
+        background: url(//s2.ymatou.com/top/0a294aaaf59d9e638d0112191d8416a0.png) repeat-x #c33;
+        height: 36px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .area {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        width: 1190px;
+        .bottom_list {
+            width: 880px;
+            margin: 10px auto 15px;
+            text-align: left;
+            overflow: hidden;
+            .dl {
+                float: left;
+                width: 190px;
+                font-size: 12px;
+                .dt {
+                    font: 700 14px/26px Microsoft yahei;
+                    padding: 3px 0;
+                }
+            }
+            .last {
+                width: auto;
+                .img {
+                    width: 90px;
+                    height: 90px;
+                }
+                .weibobox {
+                    border: 1px solid #ddd;
+                    display: block;
+                    padding: 3px 1px 3px 5px;
+                    margin-top: 5px;
+                    text-decoration: none;
+                    a {
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin: 0 2px;
+                        color: #999;
+                        .ico-weibo-png {
+                            background-position: -26px -131px;
+                            width: 22px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .matou-intro {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            .matou-intro a {
+                font: 700 12px/1.5 Microsoft yahei;
+                display: inline-block;
+                border-right: 1px solid #ddd;
+                padding: 0 10px;
+                color: #868686;
+            }
+        }
+        .matou-link {
+            margin: 0 auto;
+            width: 1100px;
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 8px;
+                color: #bbb;
+                border-right: 1px solid #ccc;
+                margin: 5px 0;
+                height: 18px;
+                line-height: 18px;
+            }
+        }
+        .friendLinks {
+            width: 760px;
+            margin: 10px auto;
+            clear: both;
+            height: 50px;
+            text-align: center;
+            font-size: 0;
+            letter-spacing: -4px;
+            .linkitem {
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(//s2.ymatou.com/top/08f215631bb50c5af9ab0f8b8ab3ae29.png);
+                background-repeat: no-repeat;
+                margin-right: 5px;
+            }
+            .icon-chengxin {
+                width: 156px;
+                height: 50px;
+                background-position: -136px -2px;
+            }
+            .icon-zhifubao {
+                width: 102px;
+                height: 50px;
+                background-position: -296px -2px;
+            }
+            .icon-wangjing {
+                width: 153px;
+                height: 50px;
+                background-position: -404px -2px;
+            }
+            .icon-gongshang2 {
+                width: 150px;
+                height: 50px;
+                background-image: url(//s2.ymatou.com/top/bb1dd1922832d86b6da3e288199c9bab.png);
+            }
+            .icon-gongshang {
+                width: 47px;
+                height: 47px;
+                background-position: -562px -2px;
+                float: left;
+            }
+        }
+        #copywrite {
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            color: #bababa;
+        }
+        .friendLinks2 {
+            margin: 0 auto;
+            width: 268px;
+            height: 100px;
+            overflow: hidden;
+            .beian-banner {
+                float: left;
+                margin-top: 25px;
+            }
+            .beian {
+                background: url(//s2.ymatou.com/top/d0289dc0a46fc5b15b3363ffa78cf6c7.png);
+                background-size: 20px 20px;
+                width: 20px;
+                height: 20px;
+                display: block;
+                float: left;
+            }
+            .beian-txt {
+                float: left;
+                height: 20px;
+                line-height: 20px;
+                margin: 0 0 0 5px;
+                color: #939393;
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../js/require.js" type="text/javascript" charset="utf-8" ></script>
+		<script type="text/javascript">
+			require(["../js/jquery-2.1.0.js", ]);
+		</script>-->
+		<link rel="stylesheet" type="text/css" href="../css/register.css" />
+	</head>
+
+	<body>
+		<!--header-->
+		<div class="wrapper simpletopbar" id="div_topbar_logininfo03">
+			<div class="area">
+				<div class="left">
+					<a class="logo" href="../index.html"></a>
+				</div>
+				<div class="right">
+					<a class="item on" href="login.html">请登录</a>
+					<div class="item top-dropdown on" id="QuickLogin">
+						<a class="droptitle" href="register.html"><span class="zhu1">快速注册</span><i class="arrow"></i></a>
+						<div class="dropdownlist">
+							<ul>
+								<li>
+									<a class="txt">买家注册</a>
+								</li>
+								<li>
+									<a class="txt">卖家注册认证</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="off">
+						
+					</div>
+					<div class="item top-dropdown" id="MyMatou">
+						<a class="droptitle" href="//www.ymatou.com/my">
+							<span class="myMatouText">我的码头</span><i class="arrow"></i>
+						</a>
+						<div class="dropdownlist">
+							<ul>
+								<li>
+									<a class="txt" >我的订单</a>
+								</li>
+								<li>
+									<a class="txt" >我的优惠券</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--header end-->
+		<!--body-->
+		<div class="wrapper">
+			<div class="area">
+				<div id="register">
+					<div class="reg_tabs">
+						<ul>
+							<li class="active">
+								<a ><i class="icon-font"></i>手机注册</a>
+							</li>
+						</ul>
+					</div>
+					<div class="form_info">
+						<div class="fr">
+							<div class="payment">
+								<div class="hd">您也可以使用下列帐号登录洋码头：</div>
+								<div class="bd">
+									<div class="dd node">
+										<a class="sina_login" href="/login/Sina/AuthLogin"><i></i>使用新浪微博账户登录</a>
+									</div>
+									<div class="dd node">
+										<a id="buttonAlipayFastPayment" href="/login/alipay"><i></i>使用支付宝账户登录</a>
+									</div>
+									<div class="dd node">
+										<a href="/login/WeiXin/AuthLogin" id="wxLogin"><i></i>使用微信账户登录</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fl left">
+							<!--手机注册内容部分-->
+							<ul id="mobileForm">
+								<li class="item clearfix">
+								</li>
+								<li class="item clearfix">
+									<div class="regtitle"><em class="yel">*</em><label>用户名：</label></div>
+									<div class="fill">
+										<input name="LoginId" id="LoginId" value="" type="text" class="regtext" placeholder="请输入用户名"><span class="verifi"></span>
+									</div>
+								</li>
+								<li class="item clearfix">
+									<div class="regtitle"><em class="yel">*</em><label>登录密码：</label></div>
+									<div class="fill">
+										<input name="password" id="password" type="password" class="regtext" required="" placeholder="请输入密码"><span class="verifi"></span>
+									</div>
+								</li>
+								<li class="item clearfix">
+									<div class="regtitle">&nbsp;</div>
+									<div class="fill">
+										<button id="registerbtnPhone">注册</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--body end-->
+		<!--footer-->
+		<div id="copywrite" style="margin-top: 10px;">
+			© 2009－2018 ymatou.com, All rights reserved 增值电信业务经营许可证：沪B2-20140021
+			<font color="white">41 </font>
+			<br>上海洋码头网络技术有限公司 版权所有
+			<br>上海市静安区江场三路93号13层
+		</div>
+		<!--footer end-->
+	</body>
+	<script type="text/javascript">
+		$("#registerbtnPhone").click(function() {
+			$.ajax({
+				type: "post",
+				url: "http://datainfo.duapp.com/shopdata/userinfo.php",
+				data: {
+					status: "register",
+					userID: $("input[type=text]").val(),
+					password: $("input[type=password]").val()
+				}
+			}).then(function(a) {
+				console.log(a)
+				if(a == 1) {
+					alert("注册成功")
+					window.location.href = 'login.html';
+				} else if(a == 0) {
+					alert("用户名重名")
+				}
+			})
+		})
+		function Cookie() {
+			var cook = getCookie("name");
+
+			if(cook) {
+				$(".on").css("display", "none");
+				$(".off").css("display", "block");
+				$(".off").html(cook + "<a id='tuichu' style='display: none;'>退出</a>");
+			}
+
+		}
+		new Cookie();
+		//		设置cookie
+		function setCookie(name, value, t) {
+			var d = new Date();
+			d.setDate(d.getDate() + t);
+			document.cookie = name + "=" + value + ";expires=" + d;
+		}
+		//		获取cookie
+		function getCookie(name) {
+			var str = document.cookie;
+			var arr = str.split("; ");
+			var newArr = [];
+			for(var i = 0; i < arr.length; i++) {
+				newArr.push(arr[i].split("="));
+			}
+			for(var i = 0; i < newArr.length; i++) {
+				if(name == newArr[i][0]) {
+					return newArr[i][1];
+				}
+			}
+		}
+
+		//		删除cookie
+		function removeCookie(name) {
+			setCookie(name, "123", -1);
+		}
+	</script>
+
+</html>

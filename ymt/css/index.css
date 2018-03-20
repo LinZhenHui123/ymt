@@ -1,0 +1,652 @@
+.home-icon {
+  background-image: url(http://s2.ymatou.com/home/ff6e07b382c6b974faa5b4cee2f0c49b.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle; }
+
+a {
+  color: #666; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle;
+  border: 0 none; }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit;
+  font-size: 100%; }
+
+.mod {
+  margin-top: 40px;
+  text-align: left; }
+  .mod .mod-bd {
+    margin-top: 10px; }
+
+.rightbar {
+  width: 35px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #383838;
+  color: #EEEEEE;
+  z-index: 222;
+  text-align: center; }
+
+.rightbar .item {
+  border-top: 1px solid #979797;
+  padding-bottom: 18px;
+  position: relative; }
+
+.rightbar .item a {
+  padding: 10px 0 6px;
+  display: block;
+  color: #EEEEEE; }
+
+.rightbar .title {
+  margin-top: 5px;
+  background: #383838; }
+
+.rightbar .item .iconfont {
+  width: 35px;
+  height: 20px;
+  display: block;
+  font-size: 24px; }
+
+.banner {
+  text-align: center;
+  width: 1200px;
+  height: 450px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden; }
+
+.banner .imgbox {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1; }
+
+.imgbox img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 1200px; }
+
+.imgbox img:nth-child(1) {
+  left: 0; }
+
+.banner > a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(100, 100, 100, 0.5);
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  color: #fff;
+  top: 125px;
+  cursor: pointer; }
+
+.banner > a:nth-of-type(1) {
+  left: 0; }
+
+.banner > a:nth-of-type(2) {
+  right: 0; }
+
+.banner-link {
+  width: 1200px;
+  height: 50px;
+  position: absolute;
+  top: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #EEEEEE;
+  z-index: -1; }
+
+.banner-link li {
+  flex: 1;
+  font-size: 18px;
+  border-right: 1px solid;
+  border-color: #CDCDCD;
+  cursor: pointer; }
+
+.banner-link li i {
+  font-size: 24px;
+  color: red; }
+
+/*body*/
+.body .type {
+  margin: 20 auto;
+  position: relative; }
+
+.inner-title {
+  overflow: hidden;
+  margin-top: 20px; }
+
+.inner-title > span {
+  float: left;
+  font-size: 24px; }
+
+.inner-title > span i {
+  font-size: 26px;
+  color: red; }
+
+.inner-title > a {
+  float: right;
+  font-size: 20px;
+  color: #B8B3B3; }
+
+.body .xg {
+  height: 400px;
+  margin: 50px auto; }
+
+.xg_imgbox {
+  position: absolute;
+  width: 1200px;
+  height: 300px; }
+
+.xg_imgbox li {
+  position: absolute;
+  width: 600px;
+  height: 300px; }
+
+.xg_imgbox img {
+  position: absolute;
+  width: 600px;
+  height: 300px; }
+
+.des {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 300px; }
+
+.xg > a {
+  position: absolute;
+  top: 150px;
+  height: 100px;
+  width: 50px;
+  background: rgba(100, 100, 100, 0.5);
+  font-size: 60px;
+  line-height: 100px;
+  color: #FFFDEF;
+  cursor: pointer; }
+
+.xg > a:nth-of-type(1) {
+  left: 0; }
+
+.xg > a:nth-of-type(2) {
+  right: 0; }
+
+.timeout-wrap {
+  background: url(http://s2.ymatou.com/home/99497957ce2e3e0c500bb3ac461bfd9f.png);
+  width: 388px;
+  height: 59px;
+  padding-top: 14px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-top: 5px; }
+
+.timeout-wrap .title {
+  font-size: 26px;
+  color: #FFFDEF;
+  letter-spacing: 2px;
+  padding: 0 20px 0 0;
+  background: transparent; }
+
+.timeout-wrap .title .iconfont {
+  width: 35px;
+  height: 20px;
+  font-size: 26px; }
+
+.timeout-wrap .time {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: rgba(196, 52, 52, 0.8);
+  background-color: #c43434\9;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 28px;
+  display: inline-block; }
+
+.bmbox .mod-bd {
+  margin-top: 10px; }
+  .bmbox .mod-bd .item {
+    margin-top: 10px; }
+    .bmbox .mod-bd .item .mb-l {
+      width: 353px;
+      height: 289px;
+      float: left;
+      position: relative;
+      text-align: center; }
+      .bmbox .mod-bd .item .mb-l .mbl-fill {
+        position: absolute;
+        width: 346px;
+        height: 140px;
+        background: url(http://s2.ymatou.com/home/cfadc39200082fb2e4629860189febfa.png);
+        top: 43px;
+        left: 3px; }
+        .bmbox .mod-bd .item .mb-l .mbl-fill .fill {
+          font-size: 24px;
+          color: #383838;
+          line-height: 38px;
+          letter-spacing: 2.6px;
+          padding-top: 30px;
+          height: 75px;
+          overflow: hidden;
+          width: 250px;
+          margin: 0 auto; }
+        .bmbox .mod-bd .item .mb-l .mbl-fill .desc {
+          margin-top: 50px;
+          font-size: 16px;
+          color: #fff;
+          text-shadow: 0 2px 4px #564d42; }
+          .bmbox .mod-bd .item .mb-l .mbl-fill .desc span {
+            padding: 0 10px; }
+        .bmbox .mod-bd .item .mb-l .mbl-fill .seller {
+          border-right: 1px solid #fff; }
+    .bmbox .mod-bd .item .must-buy-bg0 {
+      background: url(http://s2.ymatou.com/home/96ff898d2be07cba4cefba818af15804.png) no-repeat; }
+    .bmbox .mod-bd .item .must-buy-bg1 {
+      background: url(http://s2.ymatou.com/home/6724f7cb998030a5ec2e7462a3303f6b.png) no-repeat; }
+    .bmbox .mod-bd .item .must-buy-bg2 {
+      background: url(http://s2.ymatou.com/home/6ce496ed576337bd2f1a867667e5eb95.png) no-repeat; }
+  .bmbox .mod-bd .mb-r {
+    margin-left: 363px; }
+  .bmbox .mod-bd .product-list {
+    border-left: 1px solid #dedede;
+    height: 289px; }
+    .bmbox .mod-bd .product-list .product-item {
+      width: 212px;
+      float: left;
+      font-size: 14px;
+      padding: 9px;
+      border: 1px solid #dedede;
+      text-align: left;
+      width: 170px;
+      padding: 19px 19px 18px;
+      margin-left: -1px;
+      position: relative; }
+      .bmbox .mod-bd .product-list .product-item .product-img {
+        width: 170px;
+        height: 170px;
+        position: relative;
+        display: block;
+        line-height: 170px;
+        overflow: hidden; }
+        .bmbox .mod-bd .product-list .product-item .product-img img {
+          width: 170px;
+          height: 170px; }
+    .bmbox .mod-bd .product-list .name {
+      color: #383838;
+      margin-top: 8px;
+      height: 42px;
+      overflow: hidden; }
+    .bmbox .mod-bd .product-list .price {
+      color: #c33;
+      margin-top: 5px;
+      font-weight: 700;
+      font-size: 18px; }
+      .bmbox .mod-bd .product-list .price .unit {
+        padding-right: 3px; }
+    .bmbox .mod-bd .product-list .country {
+      position: absolute;
+      right: 20px;
+      bottom: 22px;
+      color: #9b9b9b;
+      font-size: 12px; }
+      .bmbox .mod-bd .product-list .country .country-sign img {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%; }
+      .bmbox .mod-bd .product-list .country .country-name {
+        vertical-align: middle;
+        margin-left: 5px; }
+
+.fl {
+  margin-top: 40px;
+  text-align: left; }
+  .fl .fl-banner {
+    float: left;
+    width: 305px;
+    margin-top: -10px; }
+    .fl .fl-banner .fl-item {
+      margin-top: 10px;
+      position: relative; }
+      .fl .fl-banner .fl-item a {
+        color: #646464; }
+        .fl .fl-banner .fl-item a img {
+          width: 305px;
+          height: 170px; }
+        .fl .fl-banner .fl-item a span {
+          background: url(http://s2.ymatou.com/home/714bc2e0953256c6707d84e00f15afcf.png) no-repeat;
+          width: 154px;
+          height: 30px;
+          text-align: center;
+          font-size: 16px;
+          position: absolute;
+          top: 59px;
+          left: 52px;
+          padding: 12px 20px 9px 29px; }
+  .fl .category-product {
+    width: 640px;
+    float: left;
+    margin-left: 13px;
+    margin-bottom: 20px; }
+    .fl .category-product .cp-item {
+      position: relative;
+      height: 180px; }
+      .fl .category-product .cp-item .cp-item-hd {
+        width: 639px;
+        height: 6px;
+        background: url(http://s2.ymatou.com/home/03c8418b6410f09816ce86c41dd791ae.png) no-repeat 0 0;
+        position: relative; }
+        .fl .category-product .cp-item .cp-item-hd .title {
+          font-size: 14px;
+          color: #383838;
+          line-height: 18px;
+          letter-spacing: 6px;
+          width: 163px;
+          position: absolute;
+          top: -6px;
+          left: 244px;
+          text-align: center; }
+      .fl .category-product .cp-item .cp-item-bd {
+        overflow: hidden;
+        margin-left: -10px; }
+        .fl .category-product .cp-item .cp-item-bd .cp-product {
+          width: 120px;
+          float: left;
+          margin-left: 10px;
+          margin-top: 20px; }
+          .fl .category-product .cp-item .cp-item-bd .cp-product .cp-img {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center; }
+            .fl .category-product .cp-item .cp-item-bd .cp-product .cp-img img {
+              vertical-align: middle;
+              max-width: 120px;
+              max-height: 120px; }
+          .fl .category-product .cp-item .cp-item-bd .cp-product .cp-name {
+            color: #383838;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            margin-top: 3px;
+            font-size: 12px; }
+  .fl .category-topic {
+    width: 234px;
+    float: right; }
+    .fl .category-topic .ct-hd {
+      width: 229px;
+      height: 9px;
+      background: url(http://s2.ymatou.com/home/ff26be807f0ba3a3d1ba3fb76b39bd5e.png) no-repeat 0 0;
+      position: relative; }
+      .fl .category-topic .ct-hd .title {
+        font-size: 14px;
+        color: #383838;
+        line-height: 18px;
+        letter-spacing: 6px;
+        width: 115px;
+        position: absolute;
+        top: -6px;
+        left: 65px;
+        text-align: center; }
+    .fl .category-topic .ct-bd a {
+      display: block;
+      width: 170px;
+      padding: 0 32px;
+      height: 45px;
+      line-height: 45px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      font-size: 14px;
+      background: url(http://s2.ymatou.com/home/1e6605d11884cc759bbb18729782f21c.png) no-repeat;
+      margin-top: 10px; }
+  .fl .brand-list {
+    overflow: hidden;
+    float: left;
+    margin-left: -10px; }
+    .fl .brand-list .bl-item {
+      width: 232px;
+      float: left;
+      margin-left: 10px;
+      background-color: #f8f8f8;
+      position: relative; }
+      .fl .brand-list .bl-item .bl-prev {
+        left: 0;
+        position: absolute;
+        top: 110px;
+        cursor: pointer;
+        display: none;
+        z-index: 10; }
+        .fl .brand-list .bl-item .bl-prev .hi-prev-small {
+          background-position: 0 -98px;
+          width: 20px;
+          height: 40px; }
+      .fl .brand-list .bl-item .bl-next {
+        right: 0;
+        position: absolute;
+        top: 110px;
+        cursor: pointer;
+        display: none;
+        z-index: 10; }
+        .fl .brand-list .bl-item .bl-next .hi-next-small {
+          background-position: -21px -98px;
+          width: 20px;
+          height: 40px; }
+      .fl .brand-list .bl-item .bl-item-bd {
+        overflow: hidden;
+        padding: 10px 20px 20px;
+        margin-left: -10px;
+        height: 234px; }
+        .fl .brand-list .bl-item .bl-item-bd a {
+          width: 91px;
+          float: left;
+          text-align: center;
+          margin: 10px 0 0 10px;
+          color: #383838; }
+          .fl .brand-list .bl-item .bl-item-bd a .bl-img {
+            width: 91px;
+            height: 91px;
+            text-align: center;
+            line-height: 91px;
+            background-color: #fff; }
+            .fl .brand-list .bl-item .bl-item-bd a .bl-img img {
+              max-width: 100%; }
+          .fl .brand-list .bl-item .bl-item-bd a .bl-name {
+            margin-top: 3px;
+            color: #383838;
+            height: 18px;
+            overflow: hidden; }
+      .fl .brand-list .bl-item .bl-item-ft {
+        text-align: center;
+        padding: 10px 0 5px;
+        border: 1px solid #dedede;
+        border-top: 0;
+        font-size: 16px;
+        color: #383838;
+        background-color: #fff;
+        font-weight: 700; }
+
+.mod-hot-site .mod-hd {
+  position: relative; }
+  .mod-hot-site .mod-hd .title {
+    vertical-align: middle;
+    color: #383838;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 8px; }
+
+.mod-hot-site .mod-bd {
+  margin-top: 10px; }
+
+.mod-hot-site .hi-hot-site {
+  background-position: -120px -30px;
+  width: 20px; }
+
+.mod-hot-site .hot-site-list {
+  overflow: hidden;
+  margin-left: -13px; }
+  .mod-hot-site .hot-site-list a.beimei {
+    background: url(http://s2.ymatou.com/home/b5abefb15e5afbb91d82c65df819be22.png) no-repeat; }
+    .mod-hot-site .hot-site-list a.beimei .hi-beimei {
+      background-position: 0 -138px; }
+  .mod-hot-site .hot-site-list a.ouzhou {
+    background: url(http://s2.ymatou.com/home/0ba856d84add76fcb5957592df10e2df.png) no-repeat; }
+    .mod-hot-site .hot-site-list a.ouzhou .hi-ouzhou {
+      background-position: -80px -138px; }
+  .mod-hot-site .hot-site-list a.yazhou {
+    background: url(http://s2.ymatou.com/home/778992f37a38a1d9baa67ab6c4e44b10.png) no-repeat; }
+    .mod-hot-site .hot-site-list a.yazhou .hi-yazhou {
+      background-position: -160px -138px; }
+  .mod-hot-site .hot-site-list a.aoxin {
+    background: url(http://s2.ymatou.com/home/733c238ece9a530ddd8bb37d23d25a5d.png) no-repeat; }
+    .mod-hot-site .hot-site-list a.aoxin .hi-aoxin {
+      background-position: -240px -138px; }
+  .mod-hot-site .hot-site-list .site-item {
+    width: 290px;
+    height: 369px;
+    float: left;
+    position: relative;
+    margin-left: 13px; }
+  .mod-hot-site .hot-site-list .home-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.hot-site-list {
+  overflow: hidden;
+  margin: -10px 0 0 -10px; }
+
+.hs-item {
+  width: 212px;
+  padding: 9px;
+  float: left;
+  border: 1px solid #dedede;
+  margin: 10px 0 0 10px; }
+  .hs-item .hs-img {
+    width: 212px;
+    height: 212px;
+    text-align: center;
+    line-height: 212px;
+    display: block; }
+    .hs-item .hs-img .hs-img img {
+      max-width: 100%;
+      max-height: 100%; }
+  .hs-item .hs-name {
+    font-size: 14px;
+    color: #383838;
+    line-height: 21px;
+    text-align: left;
+    height: 40px;
+    margin-top: 10px; }
+  .hs-item .seller {
+    position: relative;
+    color: #9b9b9b;
+    margin-top: 5px;
+    font-size: 12px; }
+    .hs-item .seller .seller span {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #666; }
+    .hs-item .seller .seller-avator {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px; }
+      .hs-item .seller .seller-avator img {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%; }
+  .hs-item .new-seller {
+    height: 36px;
+    line-height: 36px;
+    border-radius: 46px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    position: relative;
+    padding: 0 10px;
+    margin-top: 6px; }
+    .hs-item .new-seller .time {
+      position: absolute;
+      right: 10px;
+      top: 0; }
+
+.cai {
+  overflow: hidden;
+  box-sizing: border-box; }
+  .cai .product-item {
+    margin: 10px 0 0 10px;
+    width: 170px;
+    float: left;
+    font-size: 14px;
+    padding: 9px;
+    border: 1px solid #dedede;
+    text-align: left; }
+    .cai .product-item .product-img {
+      width: 170px;
+      height: 212px;
+      line-height: 212px;
+      text-align: center;
+      position: relative;
+      display: block;
+      overflow: hidden; }
+      .cai .product-item .product-img img {
+        width: 180px;
+        height: 212px; }
+    .cai .product-item .price {
+      color: #c33;
+      margin-top: 5px;
+      font-weight: 700;
+      font-size: 18px; }
+  .cai .name {
+    color: #383838;
+    margin-top: 8px;
+    height: 42px;
+    overflow: hidden; }
+  .cai .unit {
+    padding-right: 3px; }
+
+.loading-more {
+  border: 1px solid #dedede;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 18px;
+  color: #383838;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 40px; }

@@ -1,0 +1,60 @@
+.yanghuo-bg {
+  background-color: #ff3c6e;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px; }
+  .yanghuo-bg .yanghuo-banner {
+    background: url(//s2.ymatou.com/home/1808ad88f53ee7bf76498eb76b6b2ba4.png) no-repeat 50%;
+    width: 1200px;
+    height: 120px;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto; }
+
+.yanghuo-global-list {
+  width: 1200px;
+  margin: 0 auto; }
+  .yanghuo-global-list .item {
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .yanghuo-global-list .item .yanghuo-hd {
+      width: 593.4px;
+      height: 316px;
+      float: left;
+      margin-right: 6px;
+      margin-bottom: 10px; }
+      .yanghuo-global-list .item .yanghuo-hd img {
+        width: 100%;
+        height: 100%; }
+    .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item {
+      margin-right: 6.5px;
+      margin-bottom: 10px;
+      height: 315px;
+      position: relative;
+      width: 191px;
+      float: left;
+      font-size: 14px;
+      border: 1px solid #dedede;
+      text-align: left; }
+      .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item img {
+        width: 100%;
+        height: 190.5px; }
+      .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item .yanghuo-text {
+        padding: 0 9px;
+        position: relative; }
+        .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item .yanghuo-text .price {
+          color: #c33;
+          margin-top: 9.5px;
+          font-size: 22px; }
+        .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item .yanghuo-text .name {
+          color: #262626;
+          margin-top: 8px;
+          height: 40px;
+          overflow: hidden; }
+      .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item .yanghuo-more {
+        background: url(//s2.ymatou.com/home/85a11d78c39ffc525510f0d2b1836d4f.png) no-repeat;
+        background-size: cover; }
+        .yanghuo-global-list .item .yanghuo-bd .yanghuo-list .yanghuo-item .yanghuo-more a {
+          width: 100%;
+          height: 100%;
+          display: block; }

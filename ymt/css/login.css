@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.wrapper .area:after,
+.wrapper .area:before {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+  font-size: 0;
+  line-height: 0; }
+
+a {
+  text-decoration: none;
+  color: #888888; }
+
+body {
+  background-color: #fff;
+  font: normal 12px/1.5 Microsoft yahei, Arial;
+  color: #666;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  min-width: 1200px;
+  display: block; }
+  .wrapper .area {
+    width: 1190px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    padding: 0 5px;
+    min-width: 1000px; }
+
+.simpletopbar {
+  height: 98px;
+  border-bottom: 2px solid #c33; }
+  .simpletopbar .left {
+    float: left; }
+    .simpletopbar .left .logo {
+      width: 311px;
+      height: 73px;
+      background: url(//s2.ymatou.com/top/a09cf0d320e4ffc6445ae0ec42cb02f0.png);
+      display: block;
+      float: left;
+      margin: 12px 0 13px; }
+  .simpletopbar .right {
+    padding-top: 40px;
+    float: right;
+    line-height: 30px; }
+    .simpletopbar .right .item {
+      float: left;
+      width: 80px; }
+    .simpletopbar .right .top-dropdown {
+      position: relative; }
+    .simpletopbar .right .top-dropdown:hover .dropdownlist {
+      display: block; }
+    .simpletopbar .right .dropdownlist {
+      display: none;
+      background-color: #fff;
+      line-height: 18px;
+      position: absolute;
+      top: 22px;
+      overflow: hidden; }
+      .simpletopbar .right .dropdownlist li {
+        margin-top: 10px; }
+    .simpletopbar .right .top-dropdown .arrow {
+      height: 0;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      display: inline-block;
+      border-width: 3px;
+      border-style: solid dashed dashed;
+      border-color: #666 transparent transparent;
+      margin: 6px 3px 0; }
+
+.div_900 {
+  width: 900px;
+  margin: 50px auto 0;
+  height: 450px; }
+  .div_900 #img_login {
+    width: 452px;
+    height: 260px;
+    margin-top: 30px;
+    float: left; }
+    .div_900 #img_login .haiwaituan {
+      width: 452px;
+      height: 260px;
+      background: url(//s2.ymatou.com/login/5aebbf5a6893bd825441a68a60b42b51.jpg);
+      display: block; }
+  .div_900 .input_div {
+    width: 360px;
+    float: right; }
+    .div_900 .input_div .gary_f1 {
+      font-size: 14px;
+      color: #666;
+      text-align: left; }
+      .div_900 .input_div .gary_f1 .line {
+        border-left: 1px solid #ccc;
+        width: 1px;
+        height: 13px;
+        vertical-align: middle;
+        display: inline-block; }
+    .div_900 .input_div .input_login {
+      width: 360px;
+      border: 1px solid #ccc;
+      background-color: #efefef;
+      margin: 5px 0 1px; }
+      .div_900 .input_div .input_login .input_login_bk {
+        width: 350px;
+        margin: 5px;
+        padding: 30px 0;
+        text-align: center;
+        background-color: #fff; }
+        .div_900 .input_div .input_login .input_login_bk #logForm .gary_f2 {
+          font-size: 14px;
+          color: #333; }
+        .div_900 .input_div .input_login .input_login_bk #logForm .div_input {
+          height: 28px;
+          width: 300px;
+          margin: 0 auto 15px; }
+          .div_900 .input_div .input_login .input_login_bk #logForm .div_input .input_style {
+            width: 200px;
+            height: 26px;
+            border: 1px solid #dadada;
+            border-top: 1px solid #bababa; }
+          .div_900 .input_div .input_login .input_login_bk #logForm .div_input .blue {
+            color: #3368ff; }
+          .div_900 .input_div .input_login .input_login_bk #logForm .div_input #checkbox_login li {
+            float: left;
+            margin-left: 68px; }
+            .div_900 .input_div .input_login .input_login_bk #logForm .div_input #checkbox_login li #IsRemember {
+              vertical-align: middle; }
+          .div_900 .input_div .input_login .input_login_bk #logForm .div_input #loginBtn {
+            width: 67px;
+            height: 30px;
+            background: url(//s2.ymatou.com/login/0c514d7e61b7db90f0798895c10e05a9.png);
+            cursor: pointer;
+            display: inline-block; }
+          .div_900 .input_div .input_login .input_login_bk #logForm .div_input .forgetPwd {
+            margin-left: 20px;
+            line-height: 30px;
+            display: inline-block;
+            vertical-align: top; }
+        .div_900 .input_div .input_login .input_login_bk #line_line {
+          margin: 0 auto 15px;
+          font-size: 0;
+          border-top: 1px solid #efefef;
+          border-bottom: 1px solid #fff;
+          width: 280px; }
+        .div_900 .input_div .input_login .input_login_bk .gary_f3 {
+          font-size: 12px;
+          color: #666; }
+        .div_900 .input_div .input_login .input_login_bk .left_ul_li {
+          width: 300px;
+          height: 28px;
+          margin: 0 auto;
+          text-align: center; }
+          .div_900 .input_div .input_login .input_login_bk .left_ul_li li {
+            margin-right: 6px;
+            height: 18px;
+            line-height: 18px;
+            display: inline-block; }
+            .div_900 .input_div .input_login .input_login_bk .left_ul_li li .sina_login {
+              display: inline-block;
+              width: 80px; }
+              .div_900 .input_div .input_login .input_login_bk .left_ul_li li .sina_login .sina_login i {
+                background-image: url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png);
+                background-repeat: no-repeat;
+                background-position: -86px -235px;
+                height: 21px;
+                float: left; }
+            .div_900 .input_div .input_login .input_login_bk .left_ul_li li #buttonAlipayFastPayment i,
+            .div_900 .input_div .input_login .input_login_bk .left_ul_li li #wxLogin i {
+              display: inline-block;
+              cursor: pointer;
+              vertical-align: middle; }
+            .div_900 .input_div .input_login .input_login_bk .left_ul_li li #buttonAlipayFastPayment i {
+              height: 16px;
+              background: url(//s2.ymatou.com/login/d50e308ab6557dead5473e95d8901975.png) -62px -235px;
+              background-repeat: no-repeat; }
+            .div_900 .input_div .input_login .input_login_bk .left_ul_li li #wxLogin i {
+              height: 20px;
+              background: url(//s2.ymatou.com/login/bfdb5897258b551e046ea2fbc433c70b.png);
+              background-repeat: no-repeat; }
+            .div_900 .input_div .input_login .input_login_bk .left_ul_li li .line {
+              border-left: 1px solid #ccc;
+              width: 1px;
+              height: 13px;
+              vertical-align: middle; }
